@@ -1,22 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- loader -->
+    <div id="preloader"></div>
+    <!-- Main cotainer html -->
+    <main class="container flex">
+      <!-- Heading -->
+      <h1 class="heading">SELECT YOUR CHOICE</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
+      <!-- Gender-filter -->
+      <div class="filter flex">
+        <button id="btn-1" class="btn f-btn">
+          <img src="assest/man.png" />
+          <span>Men</span>
+        </button>
+        <button id="btn-2" class="btn f-btn">
+          <img src="assest/woman.png" />
+          <span>Women</span>
+        </button>
+        <button id="btn-3" class="btn f-btn">
+          <img src="assest/kid.png" />
+          <span>Kids</span>
+        </button>
+      </div>
 
-</head>
+      <!-- Cloth Cards -->
+      <div class="items-div grid-box">
+        <!-- Card-1 -->
 
-<body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
-    </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
-</body>
+        <div class="item" id="item-1">
+          <div class="badge-text"></div>
+          <img class="item-img" alt="User Image" src="" />
+          <div class="product-details">
+            <div class="product-headings flex">
+              <h2 class="product-title"></h2>
+              <span class="dot"><img src="assest/dot.svg" alt="." /></span>
+              <p class="vendor"></p>
+            </div>
+            <div class="product-prices flex">
+              <p class="price"></p>
+              <div class="other-price flex">
+                <p class="old-price"></p>
+                <p class="off-percent"></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <!-- card-2 -->
 
+        <div class="item" id="item-2">
+          <div class="badge-text"></div>
+          <img class="item-img" alt="User Image" src="" />
+          <div class="product-details">
+            <div class="product-headings flex">
+              <h2 class="product-title"></h2>
+              <span class="dot"><img src="assest/dot.svg" alt="." /></span>
+              <p class="vendor"></p>
+            </div>
+            <div class="product-prices flex">
+              <p class="price"></p>
+              <div class="other-price flex">
+                <p class="old-price"></p>
+                <p class="off-percent"></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <!-- Card-3 -->
+
+        <div class="item" id="item-3">
+          <div class="badge-text"></div>
+          <img class="item-img" alt="User Image" src="" />
+          <div class="product-details">
+            <div class="product-headings flex">
+              <h2 class="product-title"></h2>
+              <span class="dot"><img src="assest/dot.svg" alt="." /></span>
+              <p class="vendor"></p>
+            </div>
+            <div class="product-prices flex">
+              <p class="price"></p>
+              <div class="other-price flex">
+                <p class="old-price"></p>
+                <p class="off-percent"></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <!-- Card-4 -->
+
+        <div class="item" id="item-4">
+          <div class="badge-text"></div>
+          <img class="item-img" alt="User Image" src="" />
+          <div class="product-details">
+            <div class="product-headings flex">
+              <h2 class="product-title"></h2>
+              <span class="dot"><img src="assest/dot.svg" alt="." /></span>
+              <p class="vendor"></p>
+            </div>
+            <div class="product-prices flex">
+              <p class="price"></p>
+              <div class="other-price flex">
+                <p class="old-price"></p>
+                <p class="off-percent"></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <!-- Card-5 -->
+
+        <div class="item" id="item-5">
+          <div class="badge-text"></div>
+          <img class="item-img" alt="User Image" src="" />
+          <div class="product-details">
+            <div class="product-headings flex">
+              <h2 class="product-title"></h2>
+              <span class="dot"><img src="assest/dot.svg" alt="." /></span>
+              <p class="vendor"></p>
+            </div>
+            <div class="product-prices flex">
+              <p class="price"></p>
+              <div class="other-price flex">
+                <p class="old-price"></p>
+                <p class="off-percent"></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <!-- card-6 -->
+
+        <div class="item" id="item-6">
+          <div class="badge-text"></div>
+          <img class="item-img" alt="User Image" src="" />
+          <div class="product-details">
+            <div class="product-headings flex">
+              <h2 class="product-title"></h2>
+              <span class="dot"><img src="assest/dot.svg" alt="." /></span>
+              <p class="vendor"></p>
+            </div>
+            <div class="product-prices flex">
+              <p class="price"></p>
+              <div class="other-price flex">
+                <p class="old-price"></p>
+                <p class="off-percent"></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <!-- Card-7 -->
+
+        <div class="item" id="item-7">
+          <div class="badge-text"></div>
+          <img class="item-img" alt="User Image" src="" />
+          <div class="product-details">
+            <div class="product-headings flex">
+              <h2 class="product-title"></h2>
+              <span class="dot"><img src="assest/dot.svg" alt="." /></span>
+              <p class="vendor"></p>
+            </div>
+            <div class="product-prices flex">
+              <p class="price"></p>
+              <div class="other-price flex">
+                <p class="old-price"></p>
+                <p class="off-percent"></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <!-- Card-8 -->
+
+        <div class="item" id="item-8">
+          <div class="badge-text"></div>
+          <img class="item-img" alt="User Image" src="" />
+          <div class="product-details">
+            <div class="product-headings flex">
+              <h2 class="product-title"></h2>
+              <span class="dot"><img src="assest/dot.svg" alt="." /></span>
+              <p class="vendor"></p>
+            </div>
+            <div class="product-prices flex">
+              <p class="price"></p>
+              <div class="other-price flex">
+                <p class="old-price"></p>
+                <p class="off-percent"></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <!-- Card-9 -->
+
+        <div class="item" id="item-9">
+          <div class="badge-text"></div>
+          <img class="item-img" alt="User Image" src="" />
+          <div class="product-details">
+            <div class="product-headings flex">
+              <h2 class="product-title"></h2>
+              <span class="dot"><img src="assest/dot.svg" alt="." /></span>
+              <p class="vendor"></p>
+            </div>
+            <div class="product-prices flex">
+              <p class="price"></p>
+              <div class="other-price flex">
+                <p class="old-price"></p>
+                <p class="off-percent"></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <!-- card-10 -->
+
+        <div class="item" id="item-10">
+          <div class="badge-text"></div>
+          <img class="item-img" alt="User Image" src="" />
+          <div class="product-details">
+            <div class="product-headings flex">
+              <h2 class="product-title"></h2>
+              <span class="dot"><img src="assest/dot.svg" alt="." /></span>
+              <p class="vendor"></p>
+            </div>
+            <div class="product-prices flex">
+              <p class="price"></p>
+              <div class="other-price flex">
+                <p class="old-price"></p>
+                <p class="off-percent"></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <!-- Card-11 -->
+
+        <div class="item" id="item-11">
+          <div class="badge-text"></div>
+          <img class="item-img" alt="User Image" src="" />
+          <div class="product-details">
+            <div class="product-headings flex">
+              <h2 class="product-title"></h2>
+              <span class="dot"><img src="assest/dot.svg" alt="." /></span>
+              <p class="vendor"></p>
+            </div>
+            <div class="product-prices flex">
+              <p class="price"></p>
+              <div class="other-price flex">
+                <p class="old-price"></p>
+                <p class="off-percent"></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+        <!-- Card-12 -->
+
+        <div class="item" id="item-12">
+          <div class="badge-text"></div>
+          <img class="item-img" alt="User Image" src="" />
+          <div class="product-details">
+            <div class="product-headings flex">
+              <h2 class="product-title"></h2>
+              <span class="dot"><img src="assest/dot.svg" alt="." /></span>
+              <p class="vendor"></p>
+            </div>
+            <div class="product-prices flex">
+              <p class="price"></p>
+              <div class="other-price flex">
+                <p class="old-price"></p>
+                <p class="off-percent"></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Add to Cart</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

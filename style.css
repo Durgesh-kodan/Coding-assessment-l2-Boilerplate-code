@@ -1,36 +1,213 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300");
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right bottom, #873572, black);
-}
-a {
-  display: inline-block;
-  color: lightgrey;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  white-space: nowrap;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.15s ease-in-out;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Basic-css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a:hover {
-  background: rgba(0, 0, 0, 0.23);
-  color: white;
-  transform: scale(1.03);
-  text-decoration: none;
-}
-a:active {
-  transform: scale(0.98);
+html {
+    font-size: 62.5%;
 }
 
+body {
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --black: rgb(0, 0, 0);
+    --grey: #e2e2e2;
+    --red: #ff3737;
+    --white: rgb(255, 255, 255);
+    --m-bottom: 3rem;
+    --text-shadow: 1px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Utility-Css */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid-box {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#preloader {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: black url(assest/loader.svg) no-repeat center center;
+    background-size: 10%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main-content css */
+
+.container {
+    width: 100%;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 4rem;
+    margin-bottom: var(--m-bottom);
+    text-shadow: var(--text-shadow);
+}
+
+.filter {
+    max-width: 90%;
+    background-color: var(--grey);
+    border-radius: 0.5rem;
+    margin-bottom: var(--m-bottom);
+}
+
+.btn {
+    height: 6rem;
+    width: 25rem;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 550;
+    border-radius: 0.5rem;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.f-btn {
+    color: var(--black);
+    background-color: transparent;
+}
+
+.f-btn img {
+    width: 15%;
+    display: none;
+}
+
+.f-btn:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.f-btn:hover img {
+    display: inline-block;
+}
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.badge-text {
+    position: absolute;
+    display: none;
+    top: 1%;
+    left: 1%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+    border-radius: 0.5rem;
+    background-color: var(--white);
+}
+
+.item img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.product-details {
+    margin: 1.5rem 0;
+}
+
+.product-headings {
+    margin-bottom: 0.5rem;
+    
+}
+
+.product-headings h2 {
+    font-size: 1.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-headings p {
+    font-size: 1.2rem;
+}
+
+.dot {
+    width: 10%;
+}
+
+.product-prices {
+    gap: 4rem;
+    margin-bottom:2rem;
+}
+
+.product-prices p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.other-price {
+    gap: 1rem;
+}
+
+.other-price p:nth-child(1) {
+    color: rgb(128, 128, 128);
+    text-decoration: line-through;
+}
+
+.other-price:nth-child(2) {
+    color: var(--red);
+}
+
+.item .btn {
+    width: 100%;
+}
+
+/* Media-query section */
+
+@media (max-width:1050px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:400px) {
+    html {
+        font-size: 35%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:210px) {
+    html {
+        font-size: 20%;
+    }
+
+    .item {
+        margin: auto;
+        max-width: 80%;
+    }
+}
