@@ -42,7 +42,7 @@ body {
     height: 100vh;
     width: 100vw;
     position: absolute;
-    background: black url(assest/loader.svg) no-repeat center center;
+    background: black url(assets/loader.svg) no-repeat center center;
     background-size: 10%;
     z-index: 10;
     display: flex;
@@ -184,30 +184,44 @@ body {
 }
 
 /* Media-query section */
-
-@media (max-width:1050px) {
-    html {
-        font-size: 50%;
-    }
+/* Add media query for screens above 1025px */
+@media screen and (min-width: 1025px) {
+  html {
+    font-size: 50%;
+}
 }
 
-@media (max-width:400px) {
-    html {
-        font-size: 35%;
-    }
-
-    .heading {
-        font-size: 3rem;
-    }
+/* Add media query for screens between 768px and 1024px */
+@media screen and (max-width: 1024px) {
+  .grid-box {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
-@media (max-width:210px) {
-    html {
-        font-size: 20%;
-    }
-
-    .item {
-        margin: auto;
-        max-width: 80%;
-    }
+/* Add media query for screens up to 767px */
+@media screen and (max-width: 767px) {
+  .container {
+      padding: 1rem;
+  }
+  .heading {
+      font-size: 3rem;
+  }
+  .btn {
+      width: 100%;
+  }
+  .f-btn img {
+      width: 20px;
+  }
+  .product-details {
+      margin: 1rem 0;
+  }
+  .product-headings h2 {
+      font-size: 1.2rem;
+  }
+  .product-headings p {
+      font-size: 1rem;
+  }
+  .dot {
+      width: 8%;
+  }
 }
